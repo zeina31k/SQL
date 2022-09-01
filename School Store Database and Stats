@@ -1,0 +1,30 @@
+--Creat a new school store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO store VALUES (1, "book", 10, 200, 3);
+INSERT INTO store VALUES (2, "pencil", 2, 50, 4);
+INSERT INTO store VALUES (3, "marker", 5, 25, 4);
+INSERT INTO store VALUES (4, "eraser", 1, 40, 4);
+INSERT INTO store VALUES (5, "magazine", 12, 30, 3);
+INSERT INTO store VALUES (6, "paper clip", 3, 250, 4);
+INSERT INTO store VALUES (7, "pen", 8, 72, 4);
+INSERT INTO store VALUES (8, "notebook", 9, 56, 2);
+INSERT INTO store VALUES (9, "poster", 13, 18, 2);
+INSERT INTO store VALUES (10, "clipboard", 17, 8, 4);
+INSERT INTO store VALUES (11, "paper", 1, 129, 2);
+INSERT INTO store VALUES (12, "binder", 11, 47, 3);
+INSERT INTO store VALUES (13, "folder", 4, 65, 3);
+INSERT INTO store VALUES (14, "stamps", 1, 43, 1);
+INSERT INTO store VALUES (15, "stickers", 1, 67, 1);
+INSERT INTO store VALUES (16, "eraser", 2, 37, 4);
+INSERT INTO store VALUES (17, "highlighter", 6, 23, 4);
+INSERT INTO store VALUES (18, "stapler", 21, 13, 4);
+INSERT INTO store VALUES (19, "scissors", 13, 17, 4);
+INSERT INTO store VALUES (20, "backpack", 48, 16, 1);
+
+--display the batabase ordered by price.
+SELECT * FROM store ORDER BY price;
+
+--display the database order by quantity under 20
+SELECT * FROM store WHERE quantity <20 ORDER BY quantity;
